@@ -1,0 +1,6 @@
+# dependencies
+/node_modules
+.parcel-cache
+
+# misc
+.DS_Store
