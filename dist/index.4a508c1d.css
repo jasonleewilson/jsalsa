@@ -103,6 +103,10 @@ body {
   margin: 0 auto;
 }
 
+.container p img {
+  width: 100%;
+}
+
 .container a {
   color: #cd2027;
 }
