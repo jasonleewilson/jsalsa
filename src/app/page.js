@@ -4,7 +4,7 @@ export const runtime = "edge";
 
 export default function Home() {
   return (
-    <main class='h-screen w-screen flex flex-col items-center justify-center'>
+    <main className='h-screen w-screen flex flex-col items-center justify-center'>
       <div id='content'>
         <p className='info text-center'>
           <Image
