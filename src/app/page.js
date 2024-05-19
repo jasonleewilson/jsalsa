@@ -1,112 +1,49 @@
 import Image from "next/image";
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
+    <main class='h-screen w-screen flex flex-col items-center justify-center'>
+      <div id='content'>
+        <p className='info text-center'>
+          <Image
+            src='/logo-jsalsa.png'
+            alt='jsalsa.com'
+            width={300}
+            height={200}
+          />
+          <br />
+          HANG TIGHT WITH THAT CHIP...
+          <br />
+          jSALSA IS COMING SOON....
+          <br />
+          <br />
+          {/* <a href='https://jasonleewilson.com' target='_blank'>
+            <svg
+              version='1.1'
+              id='logo-container'
+              xmlns='http://www.w3.org/2000/svg'
+              xmlns:xlink='http://www.w3.org/1999/xlink'
+              x='0px'
+              y='0px'
+              viewBox='0 0 256 256'
+              style='enable-background: new 0 0 256 256'
+              xml:space='preserve'
+            >
+              <path
+                className='logo'
+                d='M181,101.2c0-18.5,0.1-37-0.1-55.5c0-3.1,0.6-4.3,4.1-4.2c14.3,0.2,28.6,0.2,43,0c3.4,0,4.1,1,4.1,4.2
+	c-0.1,31,0.1,62-0.1,92.9c-0.1,12.1-0.4,24.4-3.7,36.1c-5.9,21.3-20.9,33.4-41.8,37.4c-20.5,3.9-41.1,3.4-60.2-6.9
+	c-1.7-0.9-2.7-0.5-4.1,0.2C98.9,217.6,75,216.1,51,208.8c-7.4-2.3-13.4-7.2-18.7-13c-4.7-5.1-7.1-11-7.6-17.9
+	c-1.8-29.6,0-59.2-0.3-88.8c0-3.1,1.7-3,3.8-3c11.3,0,22.6,0.1,34-0.1c3.5-0.1,4.4,1.1,4.5,4.6c0.2,22.6,0.7,45.3,1.1,67.9
+	c0,1.7,0.1,3.3,0.4,5c1,6.8,5.9,11.8,11.8,12.3c8.7,0.7,13.9-2.3,16.5-9.7c2.2-6.2,2.3-12.7,2.3-19.2c0-28.1,0.1-56.3-0.1-84.4
+	c0-3.9,1-5,5-5c13.8,0.2,27.6,0.2,41.5,0c3.9-0.1,4.6,1.1,4.6,4.7c-0.1,28.3,0,56.6,0.1,84.9c0,5.3,0.4,10.6,0.8,15.9
+	c0.4,6,5.1,11.6,10.4,12.6c7.9,1.5,14.3-1.3,17.2-7.7c2.5-5.4,2.8-11.3,2.9-17.1C181,134.2,181,117.7,181,101.2L181,101.2z'
+              />
+            </svg>
+          </a> */}
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   );
