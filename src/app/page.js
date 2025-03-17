@@ -11,12 +11,12 @@ export default function Home() {
             src='/logo-jsalsa.png'
             alt='jsalsa.com'
             width={300}
-            height={200}
+            height={97}
           />
           <br />
           HANG TIGHT WITH THAT CHIP...
           <br />
-          jSALSA IS COMING SOON....
+          jSALSA IS COMING SOON...
           <br />
           <br />
           {/* <a href='https://jasonleewilson.com' target='_blank'>
